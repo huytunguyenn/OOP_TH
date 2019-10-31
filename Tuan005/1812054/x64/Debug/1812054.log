@@ -1,0 +1,10 @@
+﻿  HoaDon.cpp
+d:\github\oop_pt\tuan005\1812054\hoadon.cpp(13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ListSach.cpp
+  MangHoaDon.cpp
+  Sach.cpp
+  main.cpp
+  Generating Code...
+d:\github\oop_pt\tuan005\1812054\listsach.cpp(177): warning C4715: 'ListSach::SearchMA': not all control paths return a value
+d:\github\oop_pt\tuan005\1812054\listsach.cpp(170): warning C4715: 'ListSach::SearchTEN': not all control paths return a value
+  1812054.vcxproj -> D:\GITHUB\OOP_pt\Tuan005\x64\Debug\18120254.exe
