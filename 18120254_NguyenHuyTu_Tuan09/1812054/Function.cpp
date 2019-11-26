@@ -2,6 +2,7 @@
 void Menu(ADMIN& admin, ListSach& l) {
 	User u;		// sử dụng chức năng mua sách
 	MangHoaDon List_Bill;
+	TacGia tg; 
 	NXB nxb; // sử dụng chức năng xóa sách nxb
 	string username, pass;
 	int lenh = 0;
@@ -125,7 +126,28 @@ void Menu(ADMIN& admin, ListSach& l) {
 					}
 				}
 				else if (choice_login == 2) { // MUỐN ĐĂNG NHẬP TÁC GIẢ
-
+					int permit = check_login;	// vì check_login sẽ bị thay đổi 
+					while (check_login != 3) {
+						system("cls");
+						cout << "== VUI LONG DANG NHAP TAC GIA ==" << endl;
+						cout << "Nhap username: ";
+						cin >> username;
+						cout << "Nhap pass: ";
+						cin >> pass;
+						check_login = admin.CheckTacGia(username, pass, tg);  // check_login đúng thì =3, ko đúng thì =-1
+						tg.Init(l); // tạo list sách của tg
+						if (check_login == -1) {
+							cout << "Dang nhap that bai!" << endl;
+							char login;
+							cout << "Dang nhap lai? (Y/N): ";
+							cin.ignore(1);
+							login = getchar();
+							if (login == 'N' || login == 'n') {
+								check_login = permit; // trả lại giá trị ban đầu cho check_login
+								break;
+							}
+						}
+					}
 				}
 				else if (choice_login == 3) { // MUỐN ĐĂNG NHẬP USER
 					int permit = check_login;	// vì check_login sẽ bị thay đổi 
@@ -212,7 +234,36 @@ void Menu(ADMIN& admin, ListSach& l) {
 				}
 			}
 			else if (check_login == 3) {	// ĐÃ ĐĂNG NHẬP TÁC GIẢ
-
+				cout << endl << "----THONG TIN LIST SACH TAC GIA " << username << " ----" << endl;
+				tg.sach_tacgia.Output();
+				system("pause");
+				int lenh_login;
+				do {
+					system("cls");
+					cout << "1. Xoa sach" << endl;
+					cout << "2. Them sach" << endl;
+					cout << "3. Sua sach" << endl;
+					cout << "4. Quay lai" << endl;
+					cout << "Lua chon cua ban: ";
+					cin >> lenh_login;
+				} while (!(lenh_login > 0 && lenh_login < 5));
+				switch (lenh_login) {
+				case 1: {
+					cin.ignore(1);
+					tg.Delete(l);
+					cout << endl << "----THONG TIN LIST SACH TAC GiA " << username << " SAU KHI XOA ----" << endl;
+					tg.sach_tacgia.Output();
+					cout << endl << "----THONG TIN LIST SACH SAU KHI XOA ----" << endl;
+					l.Output();
+					system("pause");
+					break; }
+				case 2: {
+					break; }
+				case 3: {
+					break; }
+				case 4: {
+					break; }
+				}
 			}
 			else if (check_login == 4) {	// ĐÃ ĐĂNG NHẬP ADMIN
 				int lenh_login;
@@ -221,11 +272,12 @@ void Menu(ADMIN& admin, ListSach& l) {
 					cout << "1. Them tai khoan." << endl;
 					cout << "2. Them sach" << endl;
 					cout << "3. Xem danh sach sach" << endl;
-					cout << "4. Dat khoa (an)" << endl;
-					cout << "5. Quay lai" << endl;
+					cout << "4. Xem danh sach tai khoan" << endl;
+					cout << "5. Dat khoa (an)" << endl;
+					cout << "6. Quay lai" << endl;
 					cout << "Lua chon cua ban: ";
 					cin >> lenh_login;
-				} while (!(lenh_login > 0 && lenh_login < 6));
+				} while (!(lenh_login > 0 && lenh_login < 7));
 				switch (lenh_login) {
 				case 1: {
 					system("cls");
@@ -242,13 +294,20 @@ void Menu(ADMIN& admin, ListSach& l) {
 					l.Input(n);
 					break; }
 				case 3: {
-					cout << endl << "----THONG TIN LIST SACH----" << endl;
+					cout << endl << "---- THONG TIN LIST SACH ----" << endl;
 					l.Output();
 					system("pause");
 					break; }
 				case 4: {
+					cout << endl<< "---- THONG TIN TAI KHOAN ----" << endl;
+					admin.OutputMember();
+					system("pause");
 					break; }
 				case 5: {
+					cin.ignore(1);
+					admin.DatKhoa(l);
+					break; }
+				case 6: {
 					break; }
 				}
 			}

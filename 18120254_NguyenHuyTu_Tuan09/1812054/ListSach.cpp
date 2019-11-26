@@ -64,24 +64,24 @@ void ListSach::TimSach() {
 	Sach temp = SearchTEN(BookName);
 	cout << temp << endl;
 }
-int ListSach::SearchViTriMA(string ma) {
-	int position = 0;
-	for (Node* p = pHead; p != NULL; p = p->pNext) {
-		if (p->data.MA == ma)
-			return position;
-		++position;
-	}
-	return -1;
-}
-int ListSach::SearchViTriTEN(string ten) {
-	int position = 0;
-	for (Node* p = pHead; p != NULL; p = p->pNext) {
-		if (p->data.TEN == ten)
-			return position;
-		++position;
-	}
-	return -1;
-}
+//int ListSach::SearchViTriMA(string ma) {
+//	int position = 0;
+//	for (Node* p = pHead; p != NULL; p = p->pNext) {
+//		if (p->data.MA == ma)
+//			return position;
+//		++position;
+//	}
+//	return -1;
+//}
+//int ListSach::SearchViTriTEN(string ten) {
+//	int position = 0;
+//	for (Node* p = pHead; p != NULL; p = p->pNext) {
+//		if (p->data.TEN == ten)
+//			return position;
+//		++position;
+//	}
+//	return -1;
+//}
 int ListSach::baonhieuTEN(string ten) {
 	int dem = 0;// dem so sach bi trung ten
 	for (Node* p = pHead; p != NULL; p = p->pNext) {

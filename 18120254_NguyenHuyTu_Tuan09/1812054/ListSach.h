@@ -9,8 +9,6 @@ public:
 };
 class ListSach
 {
-private:
-	
 public:
 	Node* pHead;
 	Node* pTail;
@@ -25,8 +23,8 @@ public:
 	void Input(int);
 	void Output();
 	void TimSach();
-	int SearchViTriMA(string);
-	int SearchViTriTEN(string);
+	//int SearchViTriMA(string);
+	//int SearchViTriTEN(string);
 	int baonhieuTEN(string);
 	//void changePriceByMA(string, int);
 	//void changePriceByTEN(string, int);
