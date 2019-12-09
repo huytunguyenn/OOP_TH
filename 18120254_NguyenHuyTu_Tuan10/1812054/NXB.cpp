@@ -21,14 +21,14 @@ int NXB::Check(string username, string password) {
 }
 void NXB::Init(ListSach& l) {
 	// nếu sach_nxb đã tồn tại thì xóa
-	if (sach_nxb.pHead != NULL)
+	if (!sach_nxb.listsach.empty())
 		sach_nxb.~ListSach();
-	if (l.pHead == NULL)
+	if (sach_nxb.listsach.empty())
 		return;
-	for (Node* p = l.pHead; p != NULL; p = p->pNext) {
-		if (p->data.NXB == ten) {
-			Node*q = sach_nxb.getNode(p->data);
-			sach_nxb.AddTail(q);
+	list<Sach>::iterator it;
+	for (it = this->sach_nxb.listsach.begin(); it != this->sach_nxb.listsach.end(); it++) {
+		if (it->TACGIA == this->ten) {
+			sach_nxb.listsach.push_back(*it);
 		}
 	}
 }

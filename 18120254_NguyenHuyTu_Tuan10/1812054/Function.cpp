@@ -43,12 +43,11 @@ void Menu(ADMIN& admin, ListSach& l) {
 				system("pause");
 			}
 		} while (!(lenh > 0 && lenh < 8));
-		switch (lenh)
-		{
+		switch (lenh){
 		case 1: {
 			system("cls");
 			cout << "==== TIM SACH ====" << endl;
-			if (l.pHead == NULL)
+			if (l.listsach.empty())
 				cout << endl << "Danh sach sach rong!" << endl << "Khong the tim sach" << endl;
 			else
 				g.TimSach(l);
@@ -57,7 +56,7 @@ void Menu(ADMIN& admin, ListSach& l) {
 		case 2: {
 			if (check_login == 1) {
 				system("cls");
-				if (l.pHead == NULL)
+				if (l.listsach.empty())
 					cout << endl << "Danh sach sach rong!" << endl << "Khong mua sach duoc!" << endl;
 				else {
 					// user mua sach, tao list_bill cho user
@@ -74,7 +73,7 @@ void Menu(ADMIN& admin, ListSach& l) {
 		case 3: {
 			if (check_login == 1) {
 				system("cls");
-				if (l.pHead == NULL)
+				if (l.listsach.empty())
 					cout << endl << "Danh sach sach rong!" << endl << "Khong the cap nhat don hang!" << endl;
 				else
 					u.updateBill(List_Bill);

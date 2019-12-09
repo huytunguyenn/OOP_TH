@@ -1,7 +1,6 @@
 ﻿#include "TacGia.h"
 
 
-
 TacGia::TacGia(){
 }
 TacGia::TacGia(string name, string password) {
@@ -23,14 +22,14 @@ int TacGia::Check(string username, string password) {
 }
 void TacGia::Init(ListSach& l) {
 	// nếu sach_tacgia đã tồn tại thì xóa
-	if (sach_tacgia.pHead != NULL)
+	if (!sach_tacgia.listsach.empty())
 		sach_tacgia.~ListSach();
-	if (l.pHead == NULL)
+	if (sach_tacgia.listsach.empty())
 		return;
-	for (Node* p = l.pHead; p != NULL; p = p->pNext) {
-		if (p->data.TACGIA == ten) {
-			Node*q = sach_tacgia.getNode(p->data);
-			sach_tacgia.AddTail(q);
+	list<Sach>::iterator it;
+	for (it = this->sach_tacgia.listsach.begin(); it != this->sach_tacgia.listsach.end(); it++) {
+		if (it->TACGIA == this->ten) {
+			sach_tacgia.listsach.push_back(*it);
 		}
 	}
 }

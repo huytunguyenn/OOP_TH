@@ -13,84 +13,96 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\User">
+      <UniqueIdentifier>{79847006-dba6-48b9-be46-db6ed0da0bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\User">
+      <UniqueIdentifier>{477d581c-fbbe-4a2e-9968-11e466215fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sach">
+      <UniqueIdentifier>{39ebe874-8357-42cc-b575-e0f7afd8c75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sach">
+      <UniqueIdentifier>{3cd37b72-66f6-41d4-be30-8ba7918dba7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sach.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HoaDon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ListSach.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MangHoaDon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Khach.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="User.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NXB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TacGia.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DoHoa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ADMIN.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Function.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ADMIN.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
     <ClInclude Include="Guest.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Khach.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="NXB.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="TacGia.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="HoaDon.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="ListSach.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="MangHoaDon.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="Sach.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="DoHoa.h">
+      <Filter>Header Files\Sach</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sach.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HoaDon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ListSach.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MangHoaDon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Khach.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="User.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NXB.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TacGia.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DoHoa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ADMIN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ADMIN.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
     <ClCompile Include="Guest.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Khach.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="NXB.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="TacGia.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="ListSach.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="HoaDon.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="MangHoaDon.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="Sach.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="DoHoa.cpp">
+      <Filter>Source Files\Sach</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

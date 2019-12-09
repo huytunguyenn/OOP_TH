@@ -1,12 +1,8 @@
 #include "Sach.h"
 
-
-
-Sach::Sach()
-{
+Sach::Sach(){
 	GIA = 0;
 }
-
 
 ostream& operator<<(ostream& os, Sach p)
 {

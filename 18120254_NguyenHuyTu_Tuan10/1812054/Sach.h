@@ -4,8 +4,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-class Sach
-{
+class Sach{
 public:
 	string TEN;
 	string MA;
