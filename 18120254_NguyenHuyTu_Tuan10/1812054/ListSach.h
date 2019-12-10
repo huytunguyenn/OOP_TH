@@ -2,6 +2,7 @@
 #define _LISTSACH_H
 #include "Sach.h"
 #include <list>
+#include <fstream>
 using namespace std;
 class ListSach{
 public:

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Sach">
+      <UniqueIdentifier>{3c126900-7469-4eb3-8c2c-5e292fddab5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sach">
+      <UniqueIdentifier>{9f867d0c-a561-4853-b98c-cab33db876f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HoaDon">
+      <UniqueIdentifier>{64c7c091-662f-4982-9f0e-3bd2f7d3a465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HoaDon">
+      <UniqueIdentifier>{d3372502-9466-42f1-85ee-5df6d54bfc56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NguoiDung">
+      <UniqueIdentifier>{86ece724-5ba6-46e6-89c7-4f99c2db9f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NguoiDung">
+      <UniqueIdentifier>{af6272e7-7039-413b-a196-fd1be115abf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Func">
+      <UniqueIdentifier>{c99e880e-d6a5-4949-b75c-a5ec2d506dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Func">
+      <UniqueIdentifier>{be4e2d7d-50bf-4b04-8ef8-309b81dd1038}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sach.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="ListSach.h">
+      <Filter>Header Files\Sach</Filter>
+    </ClInclude>
+    <ClInclude Include="HoaDon.h">
+      <Filter>Header Files\HoaDon</Filter>
+    </ClInclude>
+    <ClInclude Include="MangHoaDon.h">
+      <Filter>Header Files\HoaDon</Filter>
+    </ClInclude>
+    <ClInclude Include="Guest.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="Khach.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="NXB.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="TacGia.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="ADMIN.h">
+      <Filter>Header Files\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="DoHoa.h">
+      <Filter>Header Files\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Header Files\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Header Files\Func</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListSach.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="Sach.cpp">
+      <Filter>Source Files\Sach</Filter>
+    </ClCompile>
+    <ClCompile Include="HoaDon.cpp">
+      <Filter>Source Files\HoaDon</Filter>
+    </ClCompile>
+    <ClCompile Include="MangHoaDon.cpp">
+      <Filter>Source Files\HoaDon</Filter>
+    </ClCompile>
+    <ClCompile Include="ADMIN.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="Guest.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="Khach.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="NXB.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="TacGia.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="DoHoa.cpp">
+      <Filter>Source Files\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Source Files\Func</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

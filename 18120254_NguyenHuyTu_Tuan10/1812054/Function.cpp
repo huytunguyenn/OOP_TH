@@ -49,8 +49,10 @@ void Menu(ADMIN& admin, ListSach& l) {
 			cout << "==== TIM SACH ====" << endl;
 			if (l.listsach.empty())
 				cout << endl << "Danh sach sach rong!" << endl << "Khong the tim sach" << endl;
-			else
+			else {
+				cin.ignore(1);
 				g.TimSach(l);
+			}
 			system("pause");
 			break; }
 		case 2: {

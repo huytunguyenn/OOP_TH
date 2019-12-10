@@ -1,0 +1,35 @@
+OOP
+MS001
+KHTN
+Nguyen Gia An
+100
+OOC
+MS002
+KHTN
+Nguyen Gia An
+100
+OOD
+MS003
+KHTN
+Nguyen Gia An
+100
+OOE
+MS004
+KHTN
+Nguyen Gia An
+100
+OOF
+MS005
+KHTN
+Nguyen Gia An
+100
+OOG
+MS006
+KHTN
+Nguyen Gia An
+100
+OOH
+MS007
+KHTN
+Nguyen Gia An
+100

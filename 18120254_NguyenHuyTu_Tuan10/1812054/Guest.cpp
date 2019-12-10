@@ -4,7 +4,11 @@
 
 void Guest::TimSach(ListSach& l){
 	Sach temp = l.TimSach();
-	cout << temp << endl;
+	if (temp.TEN == "") {
+		cout << "Khong tim thay sach" << endl;
+	}
+	else
+		cout << temp << endl;
 }
 
 void Guest::Signup(ADMIN& admin) {

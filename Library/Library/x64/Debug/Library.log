@@ -1,0 +1,14 @@
+﻿  Library.cpp
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(270,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(377,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(406,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(452,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(535,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(859,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(877,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(895,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(930,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(950,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(968,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\source\repos\Library\Library\Library.cpp(986,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Library.vcxproj -> C:\Users\Admin\source\repos\Library\x64\Debug\Library.exe

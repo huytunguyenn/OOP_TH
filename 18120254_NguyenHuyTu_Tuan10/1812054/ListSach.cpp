@@ -1,41 +1,63 @@
 ﻿#include "ListSach.h"
 ListSach::ListSach() {
-	
+	ifstream fin("listsach.txt", ios_base::in);
+	if (fin.fail()) {
+		return;
+	}
+	else {
+		Sach temp;
+		while (!fin.eof()) {
+			getline(fin, temp.TEN);
+			getline(fin, temp.MA);
+			getline(fin, temp.TACGIA);
+			getline(fin, temp.NXB);
+			fin >> temp.GIA;
+			this->listsach.push_back(temp);
+		}
+	}
+	fin.close();
 }
 ListSach::~ListSach() {
 	listsach.clear();
 }
 void ListSach::Input(int n) {
 	Sach x;
+	fstream fout("listsach.txt", ios_base::app);
 	for (int i = 0; i < n; i++) {
 		cout << "Nhap thong tin cho cuon sach thu " << i + 1 << endl;
 		cin >> x;
 		this->listsach.push_back(x);
+		fout << x.TEN << endl;
+		fout << x.MA << endl;
+		fout << x.TACGIA << endl;
+		fout << x.NXB << endl;
+		fout << x.GIA << endl;
 	}
+	fout.close();
 }
 void ListSach::Output() {
 	if (this->listsach.empty()) {
-		cout << endl<< "DANH SACH RONG!" << endl;
+		cout << endl << "DANH SACH RONG!" << endl;
 		system("pause");
 		return;
 	}
 	list<Sach>::iterator it;
 	int i = 1;
-	for (it = this->listsach.begin(); it!=this->listsach.end();it++) {
+	for (it = this->listsach.begin(); it != this->listsach.end(); it++) {
 		cout << i++ << ". " << *it;
 	}
 }
 Sach ListSach::TimSach() {
 	string BookName;
 	cout << endl << "Vui long nhap ten sach muon tim: ";
-	cin >> BookName;
+	getline(cin, BookName);
 	Sach temp = SearchTEN(BookName);
 	return temp;
 }
 int ListSach::baonhieuTEN(string ten) {
 	int dem = 0;// dem so sach bi trung ten
 	list<Sach>::iterator it;
-	for (it = this->listsach.begin(); it != this->listsach.end();it++) {
+	for (it = this->listsach.begin(); it != this->listsach.end(); it++) {
 		if (it->TEN == ten) {
 			dem++;
 		}
