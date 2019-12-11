@@ -11,6 +11,7 @@ public:
 	string TACGIA;
 	string NXB;
 	unsigned int GIA;
+	vector<string> LOCK;
 
 	Sach();
 	friend ostream& operator<<(ostream&, Sach);

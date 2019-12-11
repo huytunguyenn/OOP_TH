@@ -120,11 +120,12 @@ void ADMIN::DatKhoa(ListSach& l) {
 	string lock_unit;
 	cout << "Nhap ten sach: ";
 	getline(cin, name_sach);
-	//for (Node* p = l.pHead; p != NULL; p = p->pNext) {
-	//	if (p->data.TEN == name_sach) {
-	//		cout << "Nhap ten nxb (hoac tac gia) bi cam: ";
-	//		cin >> lock_unit;
-	//		p->data.LOCK.push_back(lock_unit);
-	//	}
-	//}
+	list<Sach>::iterator it;
+	for (it = l.listsach.begin();it!=l.listsach.end();it++) {
+		if (it->TEN == name_sach) {
+			cout << "Nhap ten nxb (hoac tac gia) bi cam: ";
+			cin >> lock_unit;
+			it->LOCK.push_back(lock_unit);
+		}
+	}
 }
